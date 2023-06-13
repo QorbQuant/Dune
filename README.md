@@ -1,2 +1,2 @@
 # Dune
-For story SQL Dune Queries
+For storing SQL Dune Queries
