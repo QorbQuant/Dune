@@ -1,0 +1,5 @@
+SELECT 
+    DATE_TRUNC('day', evt_block_time) AS day
+    ,SUM(tokenAmount/POWER(10, 18)) OVER(ORDER BY evt_block_time) AS amount
+FROM conicfinance_ethereum.CNCMintingRebalancingRewardsHandler_evt_RebalancingRewardDistributed
+ORDER BY 1 DESC
